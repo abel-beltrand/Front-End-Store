@@ -1,7 +1,7 @@
 :root{
     --primario: #9c27b0;
     --primarioOscuro: #89119d;
-    --secundario: ffce00;
+    --secundario: #ffce00;
     --secundarioOscuro: rgb(233, 287, 2);
     --blanco: #ffffff;
     --negro: #000000;
@@ -51,4 +51,29 @@ h2{
 }
 h3{
     font-size: 2.4rem;
+}
+/*****HEADER*****/
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header__logo{
+    margin:3rem 0
+}
+/*****NAVEGACIÓN*****/
+.navigation{
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.navigation__link{
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 3rem;
+}
+.navigation__link--active,
+.navigation__link:hover{
+    color: var(--secundario);
 }
